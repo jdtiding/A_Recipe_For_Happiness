@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div id="container">
+    <header>
+      <h1> A Recipe For Happiness  </h1>
+      <img src="https://i.imgur.com/U1ALQUv.jpg?2">
+      <p> Happiness is extremely vital to our own goals in life. By being happy, we have the potential to change many other lives just by being ourselves. Serve the recipe three times a day for happy life! </p>
+    </header>
+    <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+      <h2> Ingredients <i class="fa fa-smile-o" aria-hidden="true"></i> </h2>
+      <ul>
+        <li> 4 cups of love </li>
+        <li> 2 cups of loyality </li>
+        <li> 2 cups of friendship </li>
+        <li> 1 cup of kind word </li>
+        <li> A pinch of personality </li>
+        <li> A dash of well-meaning humor </li>
+        <li> 1 can of smiles </li>
+        <li> 1 bottle of sunshine </li>
+      </ul>  
+    </section>
+    <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+        <h2> Preparation <i class="fa fa-list-alt" aria-hidden="true"></i> </h2>
+        <ol>
+          <li> Mix love, loyality and friendship in a big bowl. </li>
+          <li> Stir in kind words, personality and humor. </li>
+          <li> Add smiles and sprinkle with a little bit of laughter. </li>
+          <li> Pour into a pan and bake with sunshine. </li>
+          <li> Serve daily and share with those around you.</li>
+        </ol>
+    </section>
+    <footer>
+      <p> Copyright JD 2019</p>
+    </footer>
+    </div>
+<script>
+        function ingredientsHover() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function ingredientsNormal() {
+            document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize = '100%';
+            // document.write("Normal");  
+        }
+
+
+        function preparationHover() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '300%';
+        }
+
+
+        function preparationNormal() {
+            document.getElementById('preparation').firstElementChild.firstElementChild.style.fontSize = '100%';
+        }
+    </script>
+</body>
+</html>
